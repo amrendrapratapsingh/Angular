@@ -1,4 +1,4 @@
-###################### demo.component.ts #################################
+###################### demo.component.ts ##################################
 
 import {Component} from '@angular/core';
 
