@@ -15,7 +15,7 @@ export class ProductComponent{
 }
 
 
-                                            #####app.module.ts#######
+                                            ##### app.module.ts #######
                                             
                                             import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -63,6 +63,6 @@ export class AppModule { }
 </body>
 </html>
 
-#################Run the Application#####################################
+################# Run the Application #####################################
 >ng serve --open
 
