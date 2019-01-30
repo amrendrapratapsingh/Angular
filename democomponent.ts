@@ -1,4 +1,8 @@
 ###################### demo.component.ts ##################################
+Note:Always use Property binding if you want to Configure for any element dynamically.
+#<input type="button" [disabled] = 'isdisabled' value="Submit"> // for Property binding
+Note:Changing "isdisabled" value in class will not effect in InterPolation.
+# <input type="button" disabled = '{{isdisabled}}' value="Submit"> // for InterPolation binding
 
 import {Component} from '@angular/core';
 
