@@ -1,0 +1,52 @@
+  ***InterPolation*******
+
+1)test.component.ts
+
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-test',
+  template: `
+  <h1>{{name | uppercase}}</h1>
+  <h1>{{name | lowercase}}</h1>
+  <h1>{{message | titlecase}}</h1>
+  <h1>{{name | slice:3:5}}</h1>
+  <h1>{{person | json}}</h1>
+
+  <h1>{{5.678 | number:'1.2-3'}}</h1>
+  <h1>{{5.678 | number:'3.4-5'}}</h1>
+  <h1>{{5.678 | number:'3.1-2'}}</h1>
+
+  <h1>{{0.25 | percent}}</h1>
+  <h1>{{0.25 | currency}}</h1>
+  <h1>{{0.25 | currency:'GBP'}}</h1>
+  <h1>{{0.25 | currency:'EUR' : 'code'}}</h1>
+  <h1>{{date | date:'short'}}</h1>
+  <h1>{{date | date:'shortDate'}}</h1>
+  <h1>{{date | date:'shortTime'}}</h1>
+  `,
+  styles: []
+})
+export class TestComponent{
+
+ public name = "Codevolution";
+ public message = "welcome to codevolution";
+ public person = {
+   "firstname":"john",
+   "lastname":"doe"
+ }
+
+ public date = new Date();
+
+}
+
+
+2) app.component.html
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+ 
+<app-test></app-test>
+</div>
